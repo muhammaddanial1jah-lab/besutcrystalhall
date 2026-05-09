@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ms">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakej Perkahwinan Besut Crystal Hall</title>
+
+    <!-- Open Graph for Link Previews (WhatsApp, Facebook, etc.) -->
+    <meta property="og:title" content="Pakej Perkahwinan Besut Crystal Hall">
+    <meta property="og:description"
+        content="Katalog Pakej Perkahwinan Eksklusif di Besut Crystal Hall.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://besutcrystalhall.com/">
+    <meta property="og:image" itemprop="image" content="gambar1.jpeg">
+    <meta property="og:image:type" content="image/jpeg">
+    <link rel="canonical" href="https://besutcrystalhall.com/">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Amiri&family=Cinzel:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="bg-black text-[#5C3D2E] relative w-full h-screen overflow-hidden flex justify-center"
+    style="font-family: 'Poppins', sans-serif;">
+<div class="relative w-full max-w-[450px] h-full overflow-hidden" style="background: #FFF8F0;">
+
+    <!-- ========== BACKGROUND MUSIC ========== -->
+    <audio id="bg-music" loop preload="auto">
+        <source src="lagu/whatsapp-audio-2026-05-06-at-15438-pm-1_1D9JrJnc%20%281%29.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- ========== SPLASH SCREEN ========== -->
+    <div id="splash-screen" class="absolute inset-0 z-50 flex flex-col items-center justify-center overflow-hidden"
+        style="background: #1a1a1a;">
+        <!-- Left Panel - shows left half of seal image -->
+        <div id="panel-left"
+            class="absolute top-0 left-0 w-1/2 h-full z-20 overflow-hidden"
+            style="box-shadow: 5px 0 25px rgba(0,0,0,0.3);">
+            <img src="seal-kiri%20kanan.png" alt="" class="absolute top-0 left-0 w-[200%] h-full object-cover object-left pointer-events-none">
+        </div>
+        <!-- Right Panel - shows right half of seal image -->
+        <div id="panel-right"
+            class="absolute top-0 right-0 w-1/2 h-full z-20 overflow-hidden"
+            style="box-shadow: -5px 0 25px rgba(0,0,0,0.3);">
+            <img src="seal-kiri%20kanan.png" alt="" class="absolute top-0 right-0 w-[200%] h-full object-cover object-right pointer-events-none">
+        </div>
+
+        <div id="open-btn"
+            class="absolute z-30 flex items-center justify-center cursor-pointer group outline-none select-none">
+
+            <!-- Glow shadow behind button -->
+            <div class="absolute rounded-full pointer-events-none"
+                style="width: 200px; height: 200px; background: radial-gradient(circle, rgba(212, 175, 55, 0.35) 0%, rgba(212, 175, 55, 0.1) 40%, transparent 70%);"></div>
+
+            <!-- Simple flat pulse indicator -->
+            <div class="absolute inset-0 rounded-full bg-[#D4AF37] opacity-15 animate-ping"
+                style="animation-duration: 2.5s;"></div>
+
+            <!-- Flat 2D Button Body - Black Theme -->
+            <div class="rounded-full flex flex-col items-center justify-center relative text-white transition-all duration-300 transform group-hover:scale-105 active:scale-95 bg-black"
+                style="width: 130px; height: 130px; box-shadow: 0 0 40px rgba(212, 175, 55, 0.4), 0 0 80px rgba(212, 175, 55, 0.15), 0 8px 25px rgba(0, 0, 0, 0.5);">
+
+                <!-- Simple dashed inner border for ticket/stamp aesthetic -->
+                <div
+                    class="absolute inset-[5px] rounded-full border-[1px] border-dashed border-white/50 pointer-events-none">
+                </div>
+
+                <div class="relative z-10 flex flex-col items-center mt-0.5">
+                    <img src="logo.png" alt="Besut Crystal Hall Logo" class="w-[80px] h-auto transform group-hover:-translate-y-1 transition-transform duration-300 drop-shadow-sm">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== BACKGROUND IMAGE ========== -->
+    <div class="fixed inset-0 z-0 pointer-events-none">
+        <img src="seal-kiri%20kanan.png" alt="" class="w-full h-full object-cover object-center opacity-40">
+        <!-- Subtle overlay -->
+        <div class="absolute inset-0" style="background: rgba(255, 248, 240, 0.15);"></div>
+    </div>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <div id="main-content"
+        class="w-full h-full overflow-y-auto scroll-smooth no-scrollbar opacity-0 transition-opacity duration-1000 relative z-10 pt-0 pb-[32vh]">
+
+        <!-- === MUKA DEPAN === -->
+        <div class="w-full relative blur-in !mb-0" style="animation-delay: 0.1s;">
+            <img src="Muka%20Depan/mukaSuratDepan.png" alt="Muka Depan Besut Crystal Hall" class="w-full h-auto object-cover shadow-md cursor-zoom-in zoomable-image block">
+        </div>
+
+
+        <!-- === HARGA PAKEJ === -->
+        <div class="aqiqah-panel !mx-0 !w-full !rounded-none !px-3 !pt-8 !pb-4 !mt-0 border-t-0">
+            <div class="aqiqah-panel-bg !rounded-none !border-x-0 !border-t-0" style="background-color: rgba(0, 0, 0, 0.95) !important;"></div>
+            <div class="aqiqah-panel-content text-center">
+                <h3 class="text-center text-[1.8rem] mb-6 tracking-wider text-[#D4AF37] drop-shadow-sm"
+                    style="font-family: 'Cinzel', serif; font-weight: 700;">Harga Pakej</h3>
+                <div class="flex flex-col gap-12 pb-4">
+                    <!-- Pakej Aryana -->
+                    <div class="relative flex flex-col items-center">
+                        <div class="bg-black/60 border border-[#D4AF37]/50 rounded-lg py-2 px-6 mb-4 z-10 shadow-[0_0_15px_rgba(212,175,55,0.2)]">
+                            <h4 class="text-[1.2rem] font-bold text-white uppercase tracking-wider"
+                                style="font-family: 'Cinzel', serif; font-weight: 700;">Pakej Aryana <span class="text-[#D4AF37]">— RM 14,100</span></h4>
+                        </div>
+                        
+                        <!-- Connectors -->
+                        <div class="absolute top-[38px] left-[15%] w-[4px] h-[30px] bg-[#D4AF37] z-0 before:content-[''] before:absolute before:top-[-6px] before:left-[-4px] before:w-[12px] before:h-[12px] before:bg-[#D4AF37] before:rounded-sm after:content-[''] after:absolute after:bottom-[-6px] after:left-[-4px] after:w-[12px] after:h-[12px] after:bg-[#D4AF37] after:rounded-sm"></div>
+                        <div class="absolute top-[38px] right-[15%] w-[4px] h-[30px] bg-[#D4AF37] z-0 before:content-[''] before:absolute before:top-[-6px] before:left-[-4px] before:w-[12px] before:h-[12px] before:bg-[#D4AF37] before:rounded-sm after:content-[''] after:absolute after:bottom-[-6px] after:left-[-4px] after:w-[12px] after:h-[12px] after:bg-[#D4AF37] after:rounded-sm"></div>
+
+                        <div class="overflow-hidden rounded-xl shadow-md border border-[#D4AF37]/30 w-full mt-4">
+                            <img src="Pakej/ChatGPT%20Image%20May%206%2C%202026%2C%2011_04_31%20AM.png" alt="Pakej Aryana" class="w-full h-auto object-cover cursor-zoom-in zoomable-image">
+                        </div>
+                    </div>
+                    <!-- Pakej Arissa -->
+                    <div class="relative flex flex-col items-center">
+                        <div class="bg-black/60 border border-[#D4AF37]/50 rounded-lg py-2 px-6 mb-4 z-10 shadow-[0_0_15px_rgba(212,175,55,0.2)]">
+                            <h4 class="text-[1.2rem] font-bold text-white uppercase tracking-wider"
+                                style="font-family: 'Cinzel', serif; font-weight: 700;">Pakej Arissa <span class="text-[#D4AF37]">— RM 17,150</span></h4>
+                        </div>
+                        
+                        <!-- Connectors -->
+                        <div class="absolute top-[38px] left-[15%] w-[4px] h-[30px] bg-[#D4AF37] z-0 before:content-[''] before:absolute before:top-[-6px] before:left-[-4px] before:w-[12px] before:h-[12px] before:bg-[#D4AF37] before:rounded-sm after:content-[''] after:absolute after:bottom-[-6px] after:left-[-4px] after:w-[12px] after:h-[12px] after:bg-[#D4AF37] after:rounded-sm"></div>
+                        <div class="absolute top-[38px] right-[15%] w-[4px] h-[30px] bg-[#D4AF37] z-0 before:content-[''] before:absolute before:top-[-6px] before:left-[-4px] before:w-[12px] before:h-[12px] before:bg-[#D4AF37] before:rounded-sm after:content-[''] after:absolute after:bottom-[-6px] after:left-[-4px] after:w-[12px] after:h-[12px] after:bg-[#D4AF37] after:rounded-sm"></div>
+
+                        <div class="overflow-hidden rounded-xl shadow-md border border-[#D4AF37]/30 w-full mt-4">
+                            <img src="Pakej/ChatGPT%20Image%20May%206%2C%202026%2C%2011_11_18%20AM.png" alt="Pakej Arissa" class="w-full h-auto object-cover cursor-zoom-in zoomable-image">
+                        </div>
+                    </div>
+                    <!-- Pakej Akad Nikah -->
+                    <div class="relative flex flex-col items-center">
+                        <div class="bg-black/60 border border-[#D4AF37]/50 rounded-lg py-2 px-6 mb-4 z-10 shadow-[0_0_15px_rgba(212,175,55,0.2)]">
+                            <h4 class="text-[1.2rem] font-bold text-white uppercase tracking-wider"
+                                style="font-family: 'Cinzel', serif; font-weight: 700;">Pakej Akad Nikah <span class="text-[#D4AF37]">— RM 1,800</span></h4>
+                        </div>
+                        
+                        <!-- Connectors -->
+                        <div class="absolute top-[38px] left-[15%] w-[4px] h-[30px] bg-[#D4AF37] z-0 before:content-[''] before:absolute before:top-[-6px] before:left-[-4px] before:w-[12px] before:h-[12px] before:bg-[#D4AF37] before:rounded-sm after:content-[''] after:absolute after:bottom-[-6px] after:left-[-4px] after:w-[12px] after:h-[12px] after:bg-[#D4AF37] after:rounded-sm"></div>
+                        <div class="absolute top-[38px] right-[15%] w-[4px] h-[30px] bg-[#D4AF37] z-0 before:content-[''] before:absolute before:top-[-6px] before:left-[-4px] before:w-[12px] before:h-[12px] before:bg-[#D4AF37] before:rounded-sm after:content-[''] after:absolute after:bottom-[-6px] after:left-[-4px] after:w-[12px] after:h-[12px] after:bg-[#D4AF37] after:rounded-sm"></div>
+
+                        <div class="overflow-hidden rounded-xl shadow-md border border-[#D4AF37]/30 w-full mt-4">
+                            <img src="Pakej/ChatGPT%20Image%20May%206%2C%202026%2C%2011_21_08%20AM.png" alt="Pakej Akad Nikah" class="w-full h-auto object-cover cursor-zoom-in zoomable-image">
+                        </div>
+                    </div>
+                    <!-- Caj Tambahan -->
+                    <div class="relative flex flex-col items-center">
+                        <div class="bg-black/60 border border-[#D4AF37]/50 rounded-lg py-2 px-6 mb-4 z-10 shadow-[0_0_15px_rgba(212,175,55,0.2)]">
+                            <h4 class="text-[1.2rem] font-bold text-white uppercase tracking-wider"
+                                style="font-family: 'Cinzel', serif; font-weight: 700;">Caj Tambahan</h4>
+                        </div>
+                        
+                        <!-- Connectors -->
+                        <div class="absolute top-[38px] left-[15%] w-[4px] h-[30px] bg-[#D4AF37] z-0 before:content-[''] before:absolute before:top-[-6px] before:left-[-4px] before:w-[12px] before:h-[12px] before:bg-[#D4AF37] before:rounded-sm after:content-[''] after:absolute after:bottom-[-6px] after:left-[-4px] after:w-[12px] after:h-[12px] after:bg-[#D4AF37] after:rounded-sm"></div>
+                        <div class="absolute top-[38px] right-[15%] w-[4px] h-[30px] bg-[#D4AF37] z-0 before:content-[''] before:absolute before:top-[-6px] before:left-[-4px] before:w-[12px] before:h-[12px] before:bg-[#D4AF37] before:rounded-sm after:content-[''] after:absolute after:bottom-[-6px] after:left-[-4px] after:w-[12px] after:h-[12px] after:bg-[#D4AF37] after:rounded-sm"></div>
+
+                        <div class="overflow-hidden rounded-xl shadow-md border border-[#D4AF37]/30 w-full mt-4">
+                            <img src="Pakej/ChatGPT%20Image%20May%208%2C%202026%2C%2009_36_35%20PM.png" alt="Caj Tambahan" class="w-full h-auto object-cover cursor-zoom-in zoomable-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- === GALERI PAKEJ === -->
+        <div class="aqiqah-panel !mx-0 !w-full !rounded-none !px-3 !pt-8 !pb-4">
+            <div class="aqiqah-panel-bg !rounded-none !border-x-0" style="background-color: rgba(0, 0, 0, 0.95) !important;"></div>
+            <div class="aqiqah-panel-content text-center">
+                <h3 class="text-center text-[1.8rem] mb-6 tracking-wider text-[#D4AF37] drop-shadow-sm"
+                    style="font-family: 'Cinzel', serif; font-weight: 700;">Galeri Pakej</h3>
+                <div class="grid grid-cols-2 gap-2 pb-4">
+                    <div class="overflow-hidden rounded-xl shadow-sm border border-[#d4b896]/30 aspect-[3/4]">
+                        <img src="Galeri/WhatsApp%20Image%202026-05-06%20at%2010.17.32%20AM%20%281%29.jpeg" alt="Galeri" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110 cursor-zoom-in zoomable-image">
+                    </div>
+                    <div class="overflow-hidden rounded-xl shadow-sm border border-[#d4b896]/30 aspect-[3/4]">
+                        <img src="Galeri/WhatsApp%20Image%202026-05-06%20at%2010.17.32%20AM.jpeg" alt="Galeri" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110 cursor-zoom-in zoomable-image">
+                    </div>
+                    <div class="overflow-hidden rounded-xl shadow-sm border border-[#d4b896]/30 aspect-[3/4]">
+                        <img src="Galeri/WhatsApp%20Image%202026-05-06%20at%2010.18.02%20AM.jpeg" alt="Galeri" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110 cursor-zoom-in zoomable-image">
+                    </div>
+                    <div class="overflow-hidden rounded-xl shadow-sm border border-[#d4b896]/30 aspect-[3/4]">
+                        <img src="Galeri/WhatsApp%20Image%202026-05-06%20at%2010.18.03%20AM%20%281%29.jpeg" alt="Galeri" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110 cursor-zoom-in zoomable-image">
+                    </div>
+                    <div class="overflow-hidden rounded-xl shadow-sm border border-[#d4b896]/30 aspect-[3/4]">
+                        <img src="Galeri/WhatsApp%20Image%202026-05-06%20at%2010.18.03%20AM%20%282%29.jpeg" alt="Galeri" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110 cursor-zoom-in zoomable-image">
+                    </div>
+                    <div class="overflow-hidden rounded-xl shadow-sm border border-[#d4b896]/30 aspect-[3/4]">
+                        <img src="Galeri/WhatsApp%20Image%202026-05-06%20at%2010.18.03%20AM%20%283%29.jpeg" alt="Galeri" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110 cursor-zoom-in zoomable-image">
+                    </div>
+                    <div class="overflow-hidden rounded-xl shadow-sm border border-[#d4b896]/30 aspect-[3/4]">
+                        <img src="Galeri/WhatsApp%20Image%202026-05-06%20at%2010.18.03%20AM%20%284%29.jpeg" alt="Galeri" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110 cursor-zoom-in zoomable-image">
+                    </div>
+                    <div class="overflow-hidden rounded-xl shadow-sm border border-[#d4b896]/30 aspect-[3/4]">
+                        <img src="Galeri/WhatsApp%20Image%202026-05-06%20at%2010.18.03%20AM%20%285%29.jpeg" alt="Galeri" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110 cursor-zoom-in zoomable-image">
+                    </div>
+                    <div class="overflow-hidden rounded-xl shadow-sm border border-[#d4b896]/30 aspect-[3/4]">
+                        <img src="Galeri/WhatsApp%20Image%202026-05-06%20at%2010.18.03%20AM.jpeg" alt="Galeri" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110 cursor-zoom-in zoomable-image">
+                    </div>
+                    <div class="overflow-hidden rounded-xl shadow-sm border border-[#d4b896]/30 aspect-[3/4]">
+                        <img src="Galeri/WhatsApp%20Image%202026-05-06%20at%2010.18.04%20AM.jpeg" alt="Galeri" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110 cursor-zoom-in zoomable-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- === MAKLUM BALAS === -->
+        <div class="aqiqah-panel !mx-0 !w-full !rounded-none !px-3 !pt-8 !pb-4">
+            <div class="aqiqah-panel-bg !rounded-none !border-x-0" style="background-color: rgba(0, 0, 0, 0.95) !important;"></div>
+            <div class="aqiqah-panel-content text-center">
+                <h3 class="text-center text-[1.8rem] mb-6 tracking-wider text-[#D4AF37] drop-shadow-sm"
+                    style="font-family: 'Cinzel', serif; font-weight: 700;">Maklum Balas</h3>
+                <div class="flex flex-col gap-4 pb-4">
+                    <div class="overflow-hidden rounded-xl shadow-md border border-[#D4AF37]/30 bg-black">
+                        <video controls playsinline class="w-full h-auto aspect-[9/16] object-cover">
+                            <source src="feedback/feedback-1.mp4" type="video/mp4">
+                            Sistem anda tidak menyokong paparan video.
+                        </video>
+                    </div>
+                    <div class="overflow-hidden rounded-xl shadow-md border border-[#D4AF37]/30 bg-black">
+                        <video controls playsinline class="w-full h-auto aspect-[9/16] object-cover">
+                            <source src="feedback/feedback-2.mp4" type="video/mp4">
+                            Sistem anda tidak menyokong paparan video.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-6 mb-10 opacity-40 pb-[10vh]">
+            <p class="text-[10px] uppercase tracking-[0.3em] font-medium text-[#5C3D2E]">Designed with ❤️</p>
+            <p class="text-[10px] tracking-[0.2em] font-medium text-[#5C3D2E] mt-2">
+                <a href="https://besutcrystalhall.com" target="_blank" rel="noopener noreferrer"
+                    class="hover:underline">besutcrystalhall.com</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- ========== IMAGE ZOOM MODAL (LIGHTBOX) ========== -->
+    <div id="image-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/90 backdrop-blur-sm opacity-0 transition-opacity duration-300">
+        <button id="close-modal" class="absolute top-4 right-4 text-white text-3xl hover:text-gray-300 focus:outline-none z-[110]">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <img id="modal-image" src="" alt="Zoomed Image" class="max-w-[95%] max-h-[90%] object-contain rounded-lg shadow-2xl scale-95 transition-transform duration-300">
+    </div>
+
+    <!-- ========== FLOATING NAVIGATION BAR ========== -->
+    <div id="bottom-nav"
+        class="fixed bottom-0 inset-x-0 w-full max-w-[450px] mx-auto z-40 translate-y-20 opacity-0 transition-all duration-[800ms] ease-out">
+
+        <!-- POPUP MENUS -->
+        <!-- Payment Popup -->
+        <div id="paymentPopup"
+            class="hidden flex flex-col absolute bottom-full mb-3 mx-4 left-0 right-0 rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.12)] border border-[#d4b896]/40 overflow-hidden bg-white/95 backdrop-blur-xl">
+            <div class="p-4 space-y-3">
+                <div class="flex items-center justify-between pb-3 border-b border-[#d4b896]/30 mb-3">
+                    <p class="text-[14px] tracking-widest font-semibold text-[#5C3D2E] uppercase">Pembayaran</p>
+                    <button onclick="togglePopup('paymentPopup')" class="bg-transparent"><i
+                            class="fa-solid fa-xmark text-gray-400 text-lg"></i></button>
+                </div>
+                <div class="flex flex-col gap-3 max-h-[60vh] overflow-y-auto no-scrollbar">
+                    <img src="Pembayaran/WhatsApp%20Image%202026-05-06%20at%2010.02.14%20AM.jpeg" alt="Pembayaran 1" class="w-full rounded-xl border border-[#d4b896]/30">
+                    <img src="Pembayaran/WhatsApp%20Image%202026-05-06%20at%2010.04.08%20AM%20copy.jpeg" alt="Pembayaran 2" class="w-full rounded-xl border border-[#d4b896]/30">
+                </div>
+            </div>
+        </div>
+
+        <!-- Phone Popup -->
+        <div id="phonePopup"
+            class="hidden flex flex-col absolute bottom-full mb-3 mx-4 left-0 right-0 rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.12)] border border-[#d4b896]/40 overflow-hidden bg-white/95 backdrop-blur-xl">
+            <div class="p-4 space-y-3">
+                <div class="flex items-center justify-between pb-3 border-b border-[#d4b896]/30 mb-3">
+                    <p class="text-[14px] tracking-widest font-semibold text-[#5C3D2E] uppercase">Hubungi Kami</p>
+                    <button onclick="togglePopup('phonePopup')" class="bg-transparent"><i
+                            class="fa-solid fa-xmark text-gray-400 text-lg"></i></button>
+                </div>
+                <!-- WhatsApp -->
+                <button onclick="window.open('https://wa.me/601110883358', '_blank'); togglePopup('phonePopup')"
+                    class="w-full flex items-center gap-4 px-4 py-3 rounded-xl hover:bg-[#f5ede4] transition-colors text-left border border-transparent hover:border-[#d4b896]/30">
+                    <div
+                        class="w-12 h-12 bg-[#f5ede4] rounded-full flex items-center justify-center p-2.5 shadow-sm border border-[#d4b896]/30">
+                        <i class="fa-brands fa-whatsapp text-2xl text-green-500"></i>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-[16px] text-[#4A2F1A] tracking-wider">Besut Crystal Hall</p>
+                        <p class="text-[13px] text-[#6B5B4E]">+60 11-1088 3358</p>
+                    </div>
+                </button>
+                <!-- Facebook -->
+                <button onclick="window.open('https://www.facebook.com/profile.php?id=61575324944071', '_blank'); togglePopup('phonePopup')"
+                    class="w-full flex items-center gap-4 px-4 py-3 rounded-xl hover:bg-[#f5ede4] transition-colors text-left border border-transparent hover:border-[#d4b896]/30">
+                    <div
+                        class="w-12 h-12 bg-[#f5ede4] rounded-full flex items-center justify-center p-2.5 shadow-sm border border-[#d4b896]/30">
+                        <i class="fa-brands fa-facebook text-2xl text-[#1877F2]"></i>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-[16px] text-[#4A2F1A] tracking-wider">Besut Crystal Hall</p>
+                        <p class="text-[13px] text-[#6B5B4E]">Facebook</p>
+                    </div>
+                </button>
+                <!-- TikTok -->
+                <button onclick="window.open('https://www.tiktok.com/@besut.crystal.hall?is_from_webapp=1&sender_device=pc', '_blank'); togglePopup('phonePopup')"
+                    class="w-full flex items-center gap-4 px-4 py-3 rounded-xl hover:bg-[#f5ede4] transition-colors text-left border border-transparent hover:border-[#d4b896]/30">
+                    <div
+                        class="w-12 h-12 bg-[#f5ede4] rounded-full flex items-center justify-center p-2.5 shadow-sm border border-[#d4b896]/30">
+                        <i class="fa-brands fa-tiktok text-2xl text-black"></i>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-[16px] text-[#4A2F1A] tracking-wider">Besut Crystal Hall</p>
+                        <p class="text-[13px] text-[#6B5B4E]">TikTok</p>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <!-- Location Popup -->
+        <div id="locationPopup"
+            class="hidden flex flex-col absolute bottom-full mb-3 mx-4 left-0 right-0 rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.12)] border border-[#d4b896]/40 overflow-hidden bg-white/95 backdrop-blur-xl">
+            <div class="p-4 space-y-3">
+                <div class="flex items-center justify-between pb-3 border-b border-[#d4b896]/30 mb-3">
+                    <p class="text-[14px] tracking-widest font-semibold text-[#5C3D2E] uppercase">Lokasi</p>
+                    <button onclick="togglePopup('locationPopup')" class="bg-transparent"><i
+                            class="fa-solid fa-xmark text-gray-400 text-lg"></i></button>
+                </div>
+                <!-- Google Maps -->
+                <button onclick="window.open('https://maps.app.goo.gl/zRYBQDAWCQgTv9FW7', '_blank'); togglePopup('locationPopup')"
+                    class="w-full flex items-center gap-4 px-4 py-3 rounded-xl hover:bg-[#f5ede4] transition-colors text-left border border-transparent hover:border-[#d4b896]/30">
+                    <div
+                        class="w-12 h-12 bg-[#f5ede4] rounded-full flex items-center justify-center p-2.5 shadow-sm border border-[#d4b896]/30">
+                        <i class="fa-solid fa-map-location-dot text-xl text-[#4285F4]"></i>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-[16px] text-[#4A2F1A] tracking-wider">Google Maps</p>
+                        <p class="text-[13px] text-[#6B5B4E]">Buka di Google Maps</p>
+                    </div>
+                </button>
+                <!-- Waze -->
+                <button onclick="window.open('https://ul.waze.com/ul?ll=5.80821760%2C102.57222580&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location', '_blank'); togglePopup('locationPopup')"
+                    class="w-full flex items-center gap-4 px-4 py-3 rounded-xl hover:bg-[#f5ede4] transition-colors text-left border border-transparent hover:border-[#d4b896]/30">
+                    <div
+                        class="w-12 h-12 bg-[#f5ede4] rounded-full flex items-center justify-center p-2.5 shadow-sm border border-[#d4b896]/30">
+                        <i class="fa-brands fa-waze text-2xl text-[#33CCFF]"></i>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-[16px] text-[#4A2F1A] tracking-wider">Waze</p>
+                        <p class="text-[13px] text-[#6B5B4E]">Buka di Waze</p>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <!-- The actual Nav Buttons -->
+        <div class="flex items-center justify-around w-full py-4 border-t border-[#d4b896]/30 z-[100] rounded-t-2xl shadow-[0_-5px_20px_rgba(139,105,60,0.08)]"
+            style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(15px);">
+
+            <!-- Hubungi Button -->
+            <button onclick="togglePopup('phonePopup')"
+                class="flex flex-col items-center justify-center w-1/3 text-[#8B5E34] hover:brightness-110 active:scale-95 transition-all duration-300 cursor-pointer">
+                <svg class="w-[26px] h-[26px] mb-[6px] fill-current drop-shadow-sm" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                </svg>
+                <span class="text-[0.85rem] font-medium tracking-wide">Hubungi</span>
+            </button>
+
+            <!-- Lokasi Button -->
+            <button onclick="togglePopup('locationPopup')"
+                class="flex flex-col items-center justify-center w-1/3 text-[#8B5E34] hover:brightness-110 active:scale-95 transition-all duration-300 cursor-pointer">
+                <svg class="w-[26px] h-[26px] mb-[6px] fill-current drop-shadow-sm" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                <span class="text-[0.85rem] font-medium tracking-wide">Lokasi</span>
+            </button>
+
+            <!-- Payment Button -->
+            <button onclick="togglePopup('paymentPopup')"
+                class="flex flex-col items-center justify-center w-1/3 text-[#8B5E34] hover:brightness-110 active:scale-95 transition-all duration-300 cursor-pointer">
+                <svg class="w-[26px] h-[26px] mb-[6px] fill-current drop-shadow-sm" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/>
+                </svg>
+                <span class="text-[0.85rem] font-medium tracking-wide">Pembayaran</span>
+            </button>
+        </div>
+    </div>
+
+</div><!-- end max-width wrapper -->
+</body>
+
+</html>
